@@ -1,10 +1,6 @@
 // https://leetcode.com/problems/running-sum-of-1d-array/
 package main
 
-import (
-	"fmt"
-)
-
 func runningSum(nums []int) []int {
 	result := []int{}
 	sum := 0
@@ -13,9 +9,4 @@ func runningSum(nums []int) []int {
 		result = append(result, sum)
 	}
 	return result
-}
-
-func main() {
-	input := []int{3, 1, 2, 10, 1}
-	fmt.Println([]int{3, 4, 6, 16, 17}, runningSum(input))
 }

@@ -10,11 +10,7 @@ func kidsWithCandies(candies []int, extraCandies int) []bool {
 	}
 
 	for k := 0; k < len(candies); k++ {
-		if candies[k]+extraCandies >= maxC {
-			result = append(result, true)
-		} else {
-			result = append(result, false)
-		}
+		result = append(result, candies[k]+extraCandies >= maxC)
 	}
 	return result
 }
